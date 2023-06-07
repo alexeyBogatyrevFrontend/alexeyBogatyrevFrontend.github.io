@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>menu</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header"></header>
+        <main class="main">
+            <section class="promo"></section>
+            <section class="info">
+                <button id="burgerMenu" class="burger">
+                    <svg width="30" height="30" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10 1.66669C8.90567 1.66669 7.82204 1.88224 6.81099 2.30102C5.79994 2.71981 4.88129 3.33364 4.10746 4.10746C2.54466 5.67027 1.66669 7.78988 1.66669 10C1.66669 12.2102 2.54466 14.3298 4.10746 15.8926C4.88129 16.6664 5.79994 17.2802 6.81099 17.699C7.82204 18.1178 8.90567 18.3334 10 18.3334C12.2102 18.3334 14.3298 17.4554 15.8926 15.8926C17.4554 14.3298 18.3334 12.2102 18.3334 10C18.3334 8.90567 18.1178 7.82204 17.699 6.81099C17.2802 5.79994 16.6664 4.88129 15.8926 4.10746C15.1188 3.33364 14.2001 2.71981 13.189 2.30102C12.178 1.88224 11.0944 1.66669 10 1.66669M5.00002 5.83335H15V7.50002H5.00002V5.83335ZM5.00002 9.16669H15V10.8334H5.00002V9.16669ZM5.00002 12.5H15V14.1667H5.00002V12.5Z"
+                            fill="#4C4C4C" />
+                    </svg>
+                </button>
+                <div class="container">
+                    <div class="info__wrapper">
+                        <div id="menuContent" class="info__item">
+                            <div class="burger__close-wrapper">
+                                <button id="burgerClose" class="burger__close">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M23.564 8.064C23.6709 7.95724 23.7557 7.83046 23.8136 7.69092C23.8715 7.55137 23.9014 7.40179 23.9014 7.25071C23.9015 7.09963 23.8719 6.95001 23.8141 6.81039C23.7564 6.67078 23.6718 6.5439 23.565 6.437C23.4582 6.3301 23.3314 6.24528 23.1919 6.18738C23.0524 6.12948 22.9028 6.09963 22.7517 6.09954C22.6006 6.09945 22.451 6.12911 22.3114 6.18684C22.1718 6.24457 22.0449 6.32924 21.938 6.436L15 13.374L8.06399 6.436C7.8481 6.22011 7.5553 6.09883 7.24999 6.09883C6.94468 6.09883 6.65187 6.22011 6.43599 6.436C6.2201 6.65189 6.09882 6.94469 6.09882 7.25C6.09882 7.55531 6.2201 7.84811 6.43599 8.064L13.374 15L6.43599 21.936C6.32909 22.0429 6.2443 22.1698 6.18644 22.3095C6.12859 22.4491 6.09882 22.5988 6.09882 22.75C6.09882 22.9012 6.12859 23.0509 6.18644 23.1905C6.2443 23.3302 6.32909 23.4571 6.43599 23.564C6.65187 23.7799 6.94468 23.9012 7.24999 23.9012C7.40116 23.9012 7.55085 23.8714 7.69052 23.8135C7.83019 23.7557 7.95709 23.6709 8.06399 23.564L15 16.626L21.938 23.564C22.1539 23.7796 22.4466 23.9007 22.7517 23.9005C23.0568 23.9003 23.3494 23.7789 23.565 23.563C23.7806 23.3471 23.9016 23.0544 23.9014 22.7493C23.9013 22.4442 23.7799 22.1516 23.564 21.936L16.626 15L23.564 8.064Z"
+                                            fill="#4c4c4c" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <h2 class="info__title">Меню раздела:</h2>
+                            <nav class="info-menu">
+                                <ul class="info-menu__list">
+                                    <li class="info-menu__list-item list">
+                                        <a class="info-menu__list-link link">Все категории</a>
+                                    </li>
+                                    <li class="info-menu__list-item book">
+                                        <a class="info-menu__list-link link">Тип издания</a>
+                                    </li>
+                                    <li class="info-menu__list-item tag">
+                                        <a class="info-menu__list-link link">Подписка по сниженным ценам</a>
+                                    </li>
+                                    <li class="info-menu__list-item gift">
+                                        <a class="info-menu__list-link link">Подарить подписку</a>
+                                    </li>
+                                    <li class="info-menu__list-item download">
+                                        <a class="info-menu__list-link link">Скачать каталог в Excel</a>
+                                    </li>
+                                </ul>
+                                <div class="info-menu__second">
+                                    <div class="menu-dropdown">
+                                        <div class="menu-dropdown__header">
+                                            <h3 class="menu-dropdown__title">Популярные категории</h3>
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 6L8 10L12 6" stroke="#4C4C4C" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <div class="menu-dropdown__body">
+                                            <ul class="info-menu__list">
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Популярные категории военные,
+                                                        об
+                                                        оружии</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Популярные категории
+                                                        медицинские, о
+                                                        красоте, здоровье</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Популярные категории
+                                                        научные</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Популярные категории военные,
+                                                        об
+                                                        оружии</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Популярные категории
+                                                        новостные</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Популярные категории о
+                                                        политике</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Популярные категории о
+                                                        промышленности,
+                                                        технологиях</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Популярные категории о
+                                                        стандартах,
+                                                        нормативных актах</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Популярные категории
+                                                        общественно-политические</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Популярные категории
+                                                        педагогические,
+                                                        образовательные</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Популярные категории по
+                                                        искусству,
+                                                        культуре</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Популярные категории
+                                                        популярные</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Популярные категории
+                                                        религиозные</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Популярные категории торговые,
+                                                        о
+                                                        бизнесе, по маркетингу</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Популярные категории
+                                                        юридические, о
+                                                        государстве, праве
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="menu-dropdown">
+                                        <div class="menu-dropdown__header">
+                                            <h3 class="menu-dropdown__title">Печатные журналы</h3>
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 6L8 10L12 6" stroke="#4C4C4C" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <div class="menu-dropdown__body">
+                                            <ul class="info-menu__list">
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Печатные журналы военные, об
+                                                        оружии</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Печатные журналы медицинские, о
+                                                        красоте, здоровье</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Печатные журналы научные</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Печатные журналы военные, об
+                                                        оружии</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Печатные журналы новостные</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Печатные журналы о политике</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Печатные журналы о
+                                                        промышленности,
+                                                        технологиях</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Печатные журналы о стандартах,
+                                                        нормативных актах</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Печатные журналы
+                                                        общественно-политические</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Печатные журналы
+                                                        педагогические,
+                                                        образовательные</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Печатные журналы по искусству,
+                                                        культуре</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Печатные журналы популярные</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Печатные журналы
+                                                        религиозные</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Печатные журналы торговые, о
+                                                        бизнесе, по маркетингу</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Печатные журналы юридические, о
+                                                        государстве, праве
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="menu-dropdown">
+                                        <div class="menu-dropdown__header">
+                                            <h3 class="menu-dropdown__title">Электронные журналы</h3>
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 6L8 10L12 6" stroke="#4C4C4C" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <div class="menu-dropdown__body">
+                                            <ul class="info-menu__list">
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Электронные журналы военные, об
+                                                        оружии</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Электронные журналы
+                                                        медицинские, о
+                                                        красоте, здоровье</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Электронные журналы научные</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Электронные журналы военные, об
+                                                        оружии</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Электронные журналы
+                                                        новостные</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Электронные журналы о
+                                                        политике</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Электронные журналы о
+                                                        промышленности,
+                                                        технологиях</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Электронные журналы о
+                                                        стандартах,
+                                                        нормативных актах</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Электронные журналы
+                                                        общественно-политические</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Электронные журналы
+                                                        педагогические,
+                                                        образовательные</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Электронные журналы по
+                                                        искусству,
+                                                        культуре</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Электронные журналы
+                                                        популярные</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Электронные журналы
+                                                        религиозные</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Электронные журналы торговые, о
+                                                        бизнесе, по маркетингу</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Электронные журналы
+                                                        юридические, о
+                                                        государстве, праве
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="menu-dropdown">
+                                        <div class="menu-dropdown__header">
+                                            <h3 class="menu-dropdown__title">Электронные газеты </h3>
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M4 6L8 10L12 6" stroke="#4C4C4C" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <div class="menu-dropdown__body">
+                                            <ul class="info-menu__list">
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Газеты военные, об
+                                                        оружии</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Газеты медицинские, о
+                                                        красоте, здоровье</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Газеты научные</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Газеты военные, об
+                                                        оружии</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Газеты новостные</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Газеты о политике</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Газеты о
+                                                        промышленности,
+                                                        технологиях</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Газеты о стандартах,
+                                                        нормативных актах</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Газеты
+                                                        общественно-политические</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Газеты педагогические,
+                                                        образовательные</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Газеты по искусству,
+                                                        культуре</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Газеты популярные</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Газеты религиозные</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Газеты торговые, о
+                                                        бизнесе, по маркетингу</a>
+                                                </li>
+                                                <li class="info-menu__list-item">
+                                                    <a class="info-menu__list-link link">Газеты юридические, о
+                                                        государстве, праве
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                        <div class="info__item">
+                            <div class="info-content"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

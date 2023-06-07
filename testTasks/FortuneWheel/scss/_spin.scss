@@ -1,0 +1,330 @@
+.spin {
+    .container {
+        padding: 0;
+    }
+    &__title {
+        padding: 0 15px;
+        font-weight: 900;
+        font-size: 36px;
+        line-height: 43px;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+        z-index: 2;
+
+        color: #ffffff;
+        span {
+            color: #f59d2b;
+        }
+        font-size: 28px;
+    }
+
+    &__subTitle {
+        margin: 17px 0 0 0;
+        font-weight: 600;
+        font-size: 22.95px;
+        line-height: 28px;
+        text-align: center;
+        color: #ffffff;
+        position: relative;
+        z-index: 2;
+    }
+
+    // &__center {
+    //     position: fixed;
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
+    // }
+
+    &__buttons {
+        margin: 60px auto 0 auto;
+        width: 745px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 2;
+        button {
+            position: relative;
+            width: 219px;
+            height: 119px;
+            background-color: inherit;
+            font-weight: 900;
+            font-size: 22px;
+            line-height: 26px;
+            text-transform: uppercase;
+            color: #ffffff;
+            img {
+                max-width: 100%;
+            }
+            span {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -35%);
+                white-space: nowrap;
+            }
+            &:active {
+                transform: scale(0.98);
+            }
+        }
+        button:nth-child(1) {
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 219px;
+                height: 119px;
+                background: url("../images/firstBtn.png");
+            }
+        }
+        button:nth-child(2) {
+            &::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 219px;
+                height: 119px;
+                background: url("../images/secondBtn.png");
+            }
+        }
+    }
+
+    &__fortune {
+        position: relative;
+        width: 450px;
+        height: 450px;
+        border-radius: 50%;
+        margin: -110px auto 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(294.4deg, #0a5af5 8.11%, #26b6f4 91.06%);
+        border: 5px solid #ffd338;
+    }
+
+    &__refresh {
+        margin: 20px auto 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        width: 438px;
+        height: 75px;
+        background: linear-gradient(294.4deg, #f5802b 8.11%, #f59d2b 91.06%);
+        border-radius: 16px;
+
+        font-weight: 800;
+        font-size: 31px;
+        line-height: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+        z-index: 2;
+        &:active {
+            transform: scale(0.98);
+        }
+    }
+}
+
+.spinBtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-90deg);
+    width: 130px;
+    height: 130px;
+    background: linear-gradient(294.4deg, #4cbfff 8.11%, #0779fe 91.06%);
+    border: 5px solid #ffd338;
+    border-radius: 50%;
+
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 48px;
+    text-transform: uppercase;
+    color: #ffffff;
+    &:active {
+        transform: translate(-50%, -50%) rotate(-90deg) scale(0.98);
+    }
+}
+
+.spinArrow {
+    position: absolute;
+    top: 6%;
+    left: 46%;
+    z-index: 2;
+    &__elem {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 34px;
+            height: 29px;
+            z-index: 2;
+            background: url("../icons/whiteArrow.svg");
+        }
+        &::after {
+            content: "";
+            position: absolute;
+            top: 8px;
+            left: 0;
+            width: 34px;
+            height: 29px;
+            background: url("../icons/purpleArrow.svg");
+        }
+    }
+}
+
+.fortune {
+    width: 380px;
+    height: 380px;
+    position: relative;
+    border-radius: 50%;
+    border: 5px solid #ffd338;
+    overflow: hidden;
+    transition: transform 1s ease;
+    transform: rotate(90deg);
+    &__items2 {
+        width: 100%;
+        height: 100%;
+        transform: rotate(180deg);
+    }
+
+    &__item {
+        width: 100%;
+        height: 100%;
+        display: inline-block;
+        position: absolute;
+
+        span {
+            position: absolute;
+            font-weight: 900;
+            font-size: 19px;
+            line-height: 29px;
+            color: #fff;
+            text-transform: uppercase;
+            white-space: nowrap;
+            small {
+                font-size: 14px;
+            }
+        }
+    }
+}
+.span1 {
+    clip-path: polygon(0 70%, 0 20%, 50% 50%);
+    background: linear-gradient(294.4deg, #2bddf5 8.11%, #1d92fe 91.06%);
+    span {
+        top: 45%;
+        right: 75%;
+        transform: rotate(-90deg);
+        text-align: center;
+    }
+}
+.span2 {
+    clip-path: polygon(0 28%, 30% 0, 50% 50%);
+    background: radial-gradient(59.36% 59.32% at 50% 49.98%, #1328e2 0%, #072fff 58.12%, #7a03d8 100%);
+    span {
+        top: 15%;
+        right: 67%;
+        transform: rotate(-45deg);
+        text-align: center;
+    }
+}
+.span3 {
+    clip-path: polygon(30% 0, 71% 0%, 50% 50%);
+    background: linear-gradient(294.4deg, #2bddf5 8.11%, #1d92fe 91.06%);
+    span {
+        top: 5%;
+        right: 40%;
+        transform: rotate(0deg);
+        text-align: center;
+    }
+}
+.span4 {
+    clip-path: polygon(71% 0, 100% 30%, 50% 50%);
+    background: radial-gradient(59.36% 59.32% at 50% 49.98%, #1328e2 0%, #072fff 58.12%, #7a03d8 100%);
+    span {
+        top: 15%;
+        right: 14%;
+        transform: rotate(45deg);
+        text-align: center;
+    }
+}
+
+.light-circle {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #ffffff;
+    position: absolute;
+    box-shadow: 0px 0px 19.0204px #ffffff, 0px 0px 10px #ffffff;
+}
+.one {
+    top: 255px;
+    left: 12px;
+}
+.two {
+    top: 165px;
+    left: 12px;
+}
+.three {
+    top: 260px;
+    right: 13px;
+}
+.four {
+    top: 160px;
+    right: 13px;
+}
+.five {
+    top: 320px;
+    right: 40px;
+}
+.six {
+    top: 384px;
+    right: 100px;
+}
+.seven {
+    top: 320px;
+    left: 40px;
+}
+.eight {
+    top: 384px;
+    left: 100px;
+}
+.nine {
+    top: 411px;
+    left: 158px;
+}
+.ten {
+    top: 412px;
+    left: 265px;
+}
+.eleven {
+    bottom: 411px;
+    right: 158px;
+}
+.twelve {
+    bottom: 412px;
+    right: 265px;
+}
+.thirteen {
+    bottom: 386px;
+    right: 324px;
+}
+.fourteen {
+    bottom: 325px;
+    right: 385px;
+}
+.fifteen {
+    bottom: 386px;
+    left: 324px;
+}
+.sixteen {
+    bottom: 325px;
+    left: 385px;
+}

@@ -1,0 +1,88 @@
+.card {
+    position: relative;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    &__circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.card-circle {
+    &__info-header {
+        display: flex;
+        align-items: center;
+    }
+
+    &__info-item {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        font-family: "Gotham Pro", sans-serif;
+    }
+
+    &__info-headerTitle {
+        color: #555555;
+        font-size: 48px;
+    }
+
+    &__info-percent {
+        color: #999ba3;
+        font-size: 16px;
+    }
+
+    &__info-percent-title {
+        color: #555555;
+        font-size: 21px;
+    }
+
+    &__info-title {
+        margin: 5px 0 0 0;
+        color: #5b5b5b;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    &__info-subtitle {
+        margin: 7px 0 0 0;
+        color: #fbd229;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    &__list {
+        margin: 5px 0 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__list-item {
+        color: #b7b2b2;
+        font-size: 12px;
+        font-weight: 600;
+        margin: 0 0 3px 0;
+        white-space: nowrap;
+    }
+
+    &__moreOrLess {
+        margin: 10px 0 0 0;
+        display: flex;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    &__moreOrLess-number {
+        color: #70a74b;
+        font-size: 16px;
+    }
+}

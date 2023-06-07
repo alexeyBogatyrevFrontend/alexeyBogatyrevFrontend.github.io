@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap");
+
+@font-face {
+    font-family: "Georgia";
+    src: local("Georgia"), url("../fonts/Georgia-Regular.ttf") format("truetype"),
+        url("../fonts/Georgia-Regular.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Georgia-Regular.woff") format("woff");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Georgia";
+    src: local("Georgia"), url("../fonts/Georgia-Bold.ttf") format("truetype"),
+        url("../fonts/Georgia-Bold.eot?#iefix") format("embedded-opentype"),
+        url("../fonts/Georgia-Bold.woff") format("woff");
+    font-weight: 700;
+    font-style: normal;
+}
+
+* {
+    font-family: "Open Sans", sans-serif;
+    font-family: "Roboto", sans-serif;
+    font-family: "Georgia", sans-serif;
+}
+
+@import "./zeroing";
+@import "./header";
+@import "./person";
+@import "./trend";
+@import "./first";
+@import "./second";
+@import "./third";
+@import "./fourth";
+@import "./fifth";
+@import "./footer";
+@import "./modal";
+
+.content {
+    margin: 30px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    &__item:nth-child(1) {
+        flex: 1 1 70%;
+        @media (max-width: 768px) {
+            flex: 1 1 100%;
+        }
+    }
+    &__item:nth-child(2) {
+        flex: 1 1 30%;
+        @media (max-width: 768px) {
+            display: none;
+        }
+    }
+}
+
+.picture {
+    max-width: 100%;
+    img {
+        max-width: 100%;
+    }
+}
+
+.btn {
+    display: block;
+    padding: 25px 0;
+    width: 380px;
+    margin: 30px auto;
+    background: #096ffa;
+    border-radius: 5px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    &:hover {
+        background-color: #0038ff;
+    }
+    &:active {
+        background-color: #0750b5;
+    }
+    @media (max-width: 600px) {
+        width: 100%;
+    }
+}

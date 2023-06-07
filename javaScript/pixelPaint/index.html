@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>pixelPaint</title>
+</head>
+
+<body>
+    <div id="wrapper" class="wrapper">
+        <header class="header">
+            <div class="container">
+                <div class="header__body">
+                    <div class="header__item">
+                        <h1 class="header__title">Создайте холст</h1>
+                        <div class="header__wrapper">
+                            <div class="header__wrapper-item">
+                                <label for="" class="header__label"
+                                    title="Максимальная ширина может быть 1140 пикселей!">Введите ширину</label>
+                                <div class="header__input">
+                                    <input id="squareCountX" type="text" oninput="onlyNumbers(this)">
+                                </div>
+                            </div>
+                            <div class="header__wrapper-item">
+                                <label for="" class="header__label">Введите высоту</label>
+                                <div class="header__input">
+                                    <input id="squareCountY" type="text" oninput="onlyNumbers(this)">
+                                </div>
+                            </div>
+                        </div>
+                        <button id="squareCountBtn" class="header__btn">Подтвердить</button>
+                    </div>
+                    <div id="colors" class="header__item">
+                        <div class="header__your-color">
+                            <h2 class="header__title">Ваш цвет:</h2>
+                            <div class="header__colors-input" style="background-color: #7c3696;">
+                                <input id="yourColor" type="color" value="#7c3696">
+                            </div>
+                        </div>
+                        <h3 class="header__title">Выберите цвет</h3>
+                        <div class="header__colors">
+                            <button class="header__colors-item" style="background-color: #7c3696;"></button>
+                            <button class="header__colors-item" style="background-color: #463291;"></button>
+                            <button class="header__colors-item" style="background-color: #3e5eab;"></button>
+                            <button class="header__colors-item" style="background-color: #1495cf;"></button>
+                            <button class="header__colors-item" style="background-color: #61b146;"></button>
+                            <button class="header__colors-item" style="background-color: #d0dd37;"></button>
+                            <button class="header__colors-item" style="background-color: #f2eb3a;"></button>
+                            <button class="header__colors-item" style="background-color: #f8bd18;"></button>
+                            <button class="header__colors-item" style="background-color: #f99b1f;"></button>
+                            <button class="header__colors-item" style="background-color: #f05325;"></button>
+                            <button class="header__colors-item" style="background-color: #f03124;"></button>
+                            <button class="header__colors-item" style="background-color: #a71e48;"></button>
+                        </div>
+                        <p class="header__colors-description">Что бы воспользоваться ластиком зажмите правую кнопку
+                            мыши!</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main" oncontextmenu="return false;">
+            <div class="container">
+                <div class="main__wrapper">
+                    <div id="board" class="main__board"></div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer"></footer>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

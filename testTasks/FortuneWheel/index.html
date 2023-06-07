@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Fortune Wheel</title>
+        <link rel="stylesheet" href="css/style.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <main class="main index">
+                <section class="spin">
+                    <div class="container">
+                        <h1 class="spin__title">
+                            Spin The Weel And
+                            <span>Get Your Welcome Bonus</span>
+                        </h1>
+                        <h2 class="spin__subTitle">
+                            <span>Bharat’s Largest</span> Gaming APP
+                        </h2>
+                        <div class="spin__center">
+                            <div class="spin__buttons">
+                                <button id="btnTryAgain">
+                                    <span>try again</span>
+                                </button>
+                                <button id="btnMoney">
+                                    <span>₹5000</span>
+                                </button>
+                            </div>
+                            <div
+                                id="mainFortune"
+                                class="spin__fortune mainFortune"
+                            >
+                                <div class="spinArrow">
+                                    <div class="spinArrow__elem"></div>
+                                </div>
+                                <div id="fortune" class="fortune">
+                                    <div class="fortune__items1">
+                                        <div class="fortune__item span1">
+                                            <span>try again</span>
+                                        </div>
+                                        <div class="fortune__item span2">
+                                            <span>
+                                                ₹1000
+                                                <br />
+                                                <small>BONUS</small>
+                                            </span>
+                                        </div>
+                                        <div class="fortune__item span3">
+                                            <span>no win</span>
+                                        </div>
+                                        <div class="fortune__item span4">
+                                            <span>
+                                                ₹100 <br />
+                                                <small>BONUS</small></span
+                                            >
+                                        </div>
+                                    </div>
+                                    <div class="fortune__items2">
+                                        <div class="fortune__item span1">
+                                            <span>try again</span>
+                                        </div>
+                                        <div class="fortune__item span2">
+                                            <span>
+                                                ₹5000 <br />
+                                                <small>BONUS</small>
+                                            </span>
+                                        </div>
+                                        <div class="fortune__item span3">
+                                            <span>no win</span>
+                                        </div>
+                                        <div class="fortune__item span4">
+                                            <span
+                                                >₹500 <br />
+                                                <small>BONUS</small>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <button id="spinBtn" class="spinBtn">
+                                        Spin
+                                    </button>
+                                </div>
+
+                                <div class="light-circle one"></div>
+                                <div class="light-circle two"></div>
+                                <div class="light-circle three"></div>
+                                <div class="light-circle four"></div>
+                                <div class="light-circle five"></div>
+                                <div class="light-circle six"></div>
+                                <div class="light-circle seven"></div>
+                                <div class="light-circle eight"></div>
+                                <div class="light-circle nine"></div>
+                                <div class="light-circle ten"></div>
+                                <div class="light-circle eleven"></div>
+                                <div class="light-circle twelve"></div>
+                                <div class="light-circle thirteen"></div>
+                                <div class="light-circle fourteen"></div>
+                                <div class="light-circle fifteen"></div>
+                                <div class="light-circle sixteen"></div>
+                            </div>
+                            <button id="spinRefresh" class="spin__refresh">
+                                <img src="icons/refresh.svg" alt="picture" />
+                                Spin
+                            </button>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="footer">
+                <div class="container">
+                    <div class="footer__partners">
+                        <h3 class="footer__title">Our Withdrawal Partners</h3>
+                        <div class="footer__brands">
+                            <a href="#">
+                                <img src="icons/paytm.png" alt="picture" />
+                            </a>
+                            <a href="#">
+                                <img src="icons/google.png" alt="picture" />
+                            </a>
+                            <a href="#">
+                                <img src="icons/m.png" alt="picture" />
+                            </a>
+                            <a href="#">
+                                <img src="icons/purple.png" alt="picture" />
+                            </a>
+                            <a href="#">
+                                <img src="icons/bank.png" alt="picture" />
+                            </a>
+                            <a href="#">
+                                <img src="icons/orange.png" alt="picture" />
+                            </a>
+                            <a href="#">
+                                <img src="icons/upi.png" alt="picture" />
+                            </a>
+                            <a href="#">
+                                <img src="icons/blue.png" alt="picture" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__platforms">
+                        <img src="icons/apple.svg" alt="picture" />
+                        <img src="icons/android.svg" alt="picture" />
+                    </div>
+
+                    <div class="firstMan">
+                        <img src="images/firstMan.jpg" alt="picture" />
+                    </div>
+                    <div class="secondMan">
+                        <img src="images/secondMan.jpg" alt="picture" />
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- modals -->
+        <div id="modalBonus" class="modal">
+            <div class="modalBonus">
+                <h2 class="modalBonus__title">
+                    Download APP And <span></span>
+                    Welcome Bonus
+                </h2>
+                <h3 class="modalBonus__title">
+                    Bad luck <br />
+                    <span></span> <br />
+                    don't be upset
+                </h3>
+                <a
+                    id="downloadApp"
+                    href="https://en.wikipedia.org/wiki/Casino"
+                    target="_blank"
+                    class="modalBonus__btn"
+                >
+                    Download app
+                    <img src="icons/arrowDownModal.svg" alt="picture" />
+                </a>
+                <p class="modalBonus__description">
+                    Largest Gaming APP With
+                    <span>Best Eraning Games & Sports Betting</span>
+                </p>
+                <button id="modalBonusClose" class="modalBonus__close"></button>
+            </div>
+        </div>
+        <div id="modalBonusBg" class="modalBg"></div>
+
+        <div id="modalPhone" class="modal">
+            <div class="modalBonus">
+                <h2 class="modalBonus__title">
+                    Download APP And <span></span>
+                    Welcome Bonus
+                </h2>
+                <h3 class="modalBonus__title">
+                    Bad luck <br />
+                    <span></span> <br />
+                    don't be upset
+                </h3>
+                <form
+                    id="form"
+                    class="form"
+                    method="POST"
+                    action="#"
+                    enctype="multipart/form-data"
+                >
+                    <div class="modalBonus__data">
+                        <div class="modalBonus__select">
+                            <select name="" id="">
+                                <option value="+91">+91</option>
+                                <option value="+92">+92</option>
+                                <option value="+93">+93</option>
+                                <option value="+94">+94</option>
+                                <option value="+98">+98</option>
+                            </select>
+                        </div>
+                        <div class="modalBonus__input">
+                            <input type="tel" data-validate-field="tel" />
+                            <input
+                                value=""
+                                id="rightNumber"
+                                name="phoneNumber"
+                                type="text"
+                                hidden
+                            />
+                        </div>
+                    </div>
+
+                    <button
+                        id="getSms"
+                        type="submit"
+                        name="formSubmit"
+                        class="modalBonus__btn"
+                    >
+                        GET APP LINK SMS
+                    </button>
+                </form>
+                <p class="modalBonus__description">
+                    Largest Gaming APP With
+                    <span>Best Eraning Games & Sports Betting</span>
+                </p>
+                <button id="modalPhoneClose" class="modalBonus__close"></button>
+            </div>
+        </div>
+        <div id="modalPhoneBg" class="modalBg"></div>
+
+        <div class="successAlert">You'll receive sms soon</div>
+
+        <script src="js/libs/inputmask.min.js"></script>
+        <script src="js/libs/just-validate.min.js"></script>
+        <script src="js/script.js"></script>
+    </body>
+</html>

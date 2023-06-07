@@ -1,0 +1,57 @@
+.first {
+    &__text-italic {
+        margin: 10px 0 0 0;
+        font-family: "Open Sans";
+        font-style: italic;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 19px;
+        color: #323232;
+        @media (max-width: 360px) {
+            font-size: 12px;
+            line-height: 16px;
+        }
+    }
+
+    &__text {
+        margin: 10px 0;
+        font-family: "Georgia";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: #323232;
+        @media (max-width: 360px) {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    &__text-bold {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 150%;
+        color: #000000;
+        padding: 0 0 30px 0;
+        border-bottom: 1px solid #c4c4c4;
+        @media (max-width: 360px) {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    &__title {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 150%;
+        color: #000000;
+        @media (max-width: 360px) {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}

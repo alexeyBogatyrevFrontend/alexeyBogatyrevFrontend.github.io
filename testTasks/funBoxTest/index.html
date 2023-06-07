@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>funBoxTest</title>
+</head>
+
+<body>
+    <div class="wrapper" oncontextmenu="return false">
+        <main class="main">
+            <div class="container">
+                <div class="main__title">Ты сегодня покормил кота?</div>
+                <div class="main__wrapper">
+                    <div class="main__column">
+                        <div class="main__card">
+                            <h2 class="main__card-title">Сказочное заморское яство</h2>
+                            <h3 class="main__card-subtitle">Нямушка <br> <span>с фуа-гра</span></h3>
+                            <p class="main__card-descr">
+                                <span>10</span> порций <br>
+                                мышь в подарок
+                            </p>
+                            <div class="main__card-img"></div>
+                            <div class="main__card-quantity">
+                                <div class="main__card-quantity-number">0,5</div>
+                                <div class="main__card-quantity-kg">КГ</div>
+                            </div>
+                        </div>
+                        <h2 class="main__column-title" data-name="duck">Чего сидишь? Порадуй котэ, <span
+                                onclick="selected(this.parentElement.parentElement.children[0])">купи.</span>
+                        </h2>
+                    </div>
+                    <div class="main__column">
+                        <div class="main__card">
+                            <h2 class="main__card-title">Сказочное заморское яство</h2>
+                            <h3 class="main__card-subtitle">Нямушка <br> <span>с рыбой</span></h3>
+                            <p class="main__card-descr">
+                                <span>40</span> порций <br>
+                                2 мыши в подарок
+                            </p>
+                            <div class="main__card-img"></div>
+                            <div class="main__card-quantity">
+                                <div class="main__card-quantity-number">2</div>
+                                <div class="main__card-quantity-kg">КГ</div>
+                            </div>
+                        </div>
+                        <h2 class="main__column-title" data-name="fish">Чего сидишь? Порадуй котэ, <span
+                                onclick="selected(this.parentElement.parentElement.children[0])">купи.</span>
+                        </h2>
+                    </div>
+                    <div class="main__column">
+                        <div class="main__card">
+                            <h2 class="main__card-title">Сказочное заморское яство</h2>
+                            <h3 class="main__card-subtitle">Нямушка <br> <span>с курой</span></h3>
+                            <p class="main__card-descr">
+                                <span>100</span> порций <br>
+                                5 мышей в подарок <br>
+                                заказчик доволен
+                            </p>
+                            <div class="main__card-img"></div>
+                            <div class="main__card-quantity">
+                                <div class="main__card-quantity-number">5</div>
+                                <div class="main__card-quantity-kg">КГ</div>
+                            </div>
+                        </div>
+                        <h2 class="main__column-title" data-name="chicken">Чего сидишь? Порадуй котэ, <span
+                                onclick="selected(this.parentElement.parentElement.children[0])">купи.</span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

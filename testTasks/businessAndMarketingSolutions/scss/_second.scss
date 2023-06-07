@@ -1,0 +1,63 @@
+.second {
+    margin: 20px 0 0;
+    &__title {
+        margin: 15px 0 0 0;
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 150%;
+        color: #000000;
+        @media (max-width: 360px) {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    &__text {
+        margin: 10px 0 0 0;
+        font-family: "Georgia";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: #323232;
+        @media (max-width: 360px) {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}
+.note {
+    padding: 20px;
+    background: rgba(9, 111, 250, 0.05);
+    border: 2px solid #096ffa;
+    border-radius: 0px 0px 10px 10px;
+    margin: 0 0 30px 0;
+    &__title {
+        font-family: "Open Sans";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 150%;
+        color: #096ffa;
+        @media (max-width: 360px) {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+
+    &__description {
+        margin: 10px 0 0 0;
+        font-family: "Georgia";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 150%;
+        color: #323232;
+        @media (max-width: 360px) {
+            font-size: 16px;
+            line-height: 24px;
+        }
+    }
+}

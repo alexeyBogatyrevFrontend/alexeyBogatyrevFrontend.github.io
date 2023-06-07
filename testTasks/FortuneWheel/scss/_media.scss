@@ -1,0 +1,478 @@
+@media (max-width: 1200px) {
+    body {
+        padding: 35px 0;
+    }
+
+    .spin__buttons {
+        margin: 10px auto 0 auto;
+    }
+
+    .spin__subTitle {
+        margin: 5px 0 0 0;
+    }
+}
+
+@media (max-width: 992px) {
+    .spin__title {
+        font-size: 28px;
+    }
+
+    // .spin__buttons {
+    //     margin: 30px auto 0 auto;
+    // }
+}
+
+@media (max-width: 768px) {
+    .spin__title {
+        font-size: 20px;
+    }
+
+    .footer .firstMan {
+        bottom: -65px;
+    }
+
+    .footer .secondMan {
+        bottom: -200px;
+    }
+
+    .spin__center {
+        width: 100%;
+    }
+
+    .spin__buttons {
+        width: 100%;
+    }
+
+    .spin__fortune {
+        z-index: 1;
+    }
+
+    body::after {
+        bottom: -170px;
+    }
+}
+
+@media (max-width: 568px) {
+    .spin__title {
+        line-height: 24px;
+    }
+
+    .spin__fortune {
+        width: 400px;
+        height: 400px;
+    }
+
+    .fortune__btn {
+        width: 100px;
+        height: 100px;
+    }
+
+    .footer .firstMan {
+        bottom: -55px;
+    }
+
+    .footer .secondMan {
+        bottom: -145px;
+        right: -120px;
+    }
+
+    .footer .container {
+        flex-direction: column;
+    }
+
+    .footer .footer__platforms {
+        position: fixed;
+        top: 15px;
+        right: 15px;
+    }
+
+    .footer .footer__partners {
+        position: fixed;
+        bottom: 20px;
+    }
+
+    body {
+        padding: 50px 0 25px 0;
+    }
+
+    .fortune {
+        width: 340px;
+        height: 340px;
+    }
+
+    .one {
+        top: 236px;
+        left: 12px;
+    }
+    .two {
+        top: 140px;
+        left: 12px;
+    }
+    .three {
+        top: 236px;
+        right: 12px;
+    }
+    .four {
+        top: 140px;
+        right: 12px;
+    }
+    .five {
+        top: 281px;
+        right: 31px;
+    }
+    .six {
+        top: 345px;
+        right: 95px;
+    }
+    .seven {
+        top: 281px;
+        left: 31px;
+    }
+    .eight {
+        top: 345px;
+        left: 95px;
+    }
+    .nine {
+        top: 365px;
+        left: 139px;
+    }
+    .ten {
+        top: 364px;
+        left: 235px;
+    }
+    .eleven {
+        bottom: 365px;
+        right: 139px;
+    }
+    .twelve {
+        bottom: 364px;
+        right: 235px;
+    }
+    .thirteen {
+        bottom: 347px;
+        right: 279px;
+    }
+    .fourteen {
+        bottom: 287px;
+        right: 343px;
+    }
+    .fifteen {
+        bottom: 347px;
+        left: 279px;
+    }
+    .sixteen {
+        bottom: 287px;
+        left: 343px;
+    }
+}
+
+@media (max-width: 475px) {
+    .spin__refresh {
+        width: 290px;
+        height: 50px;
+    }
+
+    .footer .footer__title {
+        font-size: 12px;
+        line-height: 19px;
+    }
+
+    .footer .footer__brands {
+        width: 240px;
+    }
+
+    .footer .firstMan {
+        left: -50px;
+    }
+
+    .spin__buttons {
+        margin: 0 auto;
+    }
+
+    .spin__buttons button {
+        width: 109px;
+        height: 68px;
+    }
+
+    .spin__buttons button span {
+        font-size: 12px;
+        line-height: 13px;
+    }
+
+    .spin__buttons button:nth-child(1)::before {
+        width: 109px;
+        height: 68px;
+        background: url("../images/firstBtnMobile.png") no-repeat;
+    }
+
+    .spin__buttons button:nth-child(2)::before {
+        width: 109px;
+        height: 68px;
+        background: url("../images/secondBtnMobile.png") no-repeat;
+    }
+
+    .spin__fortune {
+        width: 278px;
+        height: 278px;
+        margin: -50px auto 0 auto;
+    }
+
+    .spin__subTitle {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .footer .firstMan {
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .footer .secondMan {
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .footer .footer__platforms {
+        img {
+            max-width: 19px;
+        }
+    }
+
+    .fortune {
+        width: 230px;
+        height: 230px;
+    }
+
+    .spinBtn {
+        width: 80px;
+        height: 80px;
+        font-size: 24px;
+        line-height: 29px;
+    }
+
+    .fortune__item span {
+        font-size: 12px;
+    }
+
+    .fortune__item span small {
+        font-size: 10px;
+        margin: -15px 0 0 0;
+        display: block;
+    }
+
+    .span1 span {
+        top: 43%;
+    }
+
+    .span2 span {
+        top: 14%;
+        right: 66%;
+    }
+
+    .span4 span {
+        top: 13%;
+        right: 15%;
+    }
+
+    .spinArrow__elem::before {
+        top: 4px;
+        left: 0;
+        width: 21px;
+        height: 22px;
+        background: url("../icons/doubleColorArrowSmall.svg");
+    }
+
+    .spinArrow__elem::after {
+        display: none;
+    }
+
+    .spin__fortune {
+        border: 3px solid #ffd338;
+    }
+
+    .fortune {
+        border: 3px solid #ffd338;
+    }
+
+    .spinBtn {
+        border: 3px solid #ffd338;
+    }
+
+    .light-circle {
+        width: 9px;
+        height: 9px;
+    }
+
+    .one {
+        top: 197px;
+        left: 24px;
+    }
+    .two {
+        top: 237px;
+        left: 64px;
+    }
+    .three {
+        top: 197px;
+        right: 24px;
+    }
+    .four {
+        top: 237px;
+        right: 64px;
+    }
+    .five {
+        top: 66px;
+        right: 23px;
+    }
+    .six {
+        top: 25px;
+        right: 65px;
+    }
+    .seven {
+        top: 66px;
+        left: 23px;
+    }
+    .eight {
+        top: 25px;
+        left: 65px;
+    }
+    .nine {
+        top: 11px;
+        left: 170px;
+    }
+    .ten {
+        top: 10px;
+        left: 98px;
+    }
+    .eleven {
+        bottom: 11px;
+        right: 170px;
+    }
+    .twelve {
+        bottom: 10px;
+        right: 98px;
+    }
+    .thirteen {
+        bottom: 100px;
+        right: 254px;
+    }
+    .fourteen {
+        bottom: 163px;
+        right: 254px;
+    }
+    .fifteen {
+        bottom: 100px;
+        left: 254px;
+    }
+    .sixteen {
+        bottom: 163px;
+        left: 254px;
+    }
+
+    .modal.active .modalBonus {
+        padding: 28px 20px 10px 20px;
+    }
+}
+
+@media (max-width: 368px) {
+    .footer .firstMan {
+        max-width: 180px;
+        left: -30px;
+        bottom: 10px;
+        z-index: 2;
+    }
+
+    .footer .secondMan {
+        max-width: 210px;
+        right: -60px;
+        bottom: -25px;
+        z-index: 2;
+    }
+
+    // .main {
+    //     z-index: none;
+    // }
+
+    .spin__center {
+        margin: -10px auto 0 auto;
+    }
+
+    .spin__refresh {
+        margin: 10px auto 0 auto;
+        position: fixed;
+        z-index: 3;
+        left: 50%;
+        transform: translateX(-50%);
+        &:active {
+            transform: translateX(-50%) scale(0.98);
+        }
+    }
+
+    .footer .footer__brands {
+        margin: 5px 0 0 0;
+    }
+
+    .spin__subTitle {
+        margin: 5px 0 0 0;
+    }
+
+    body {
+        padding: 40px 0 25px 0;
+        &::after {
+            z-index: 2;
+        }
+    }
+
+    .footer .footer__partners {
+        z-index: 3;
+    }
+
+    .footer .footer__partners {
+        bottom: 10px;
+    }
+
+    #modalBonus.modal {
+        width: 285px;
+    }
+
+    #modalPhone.modal {
+        width: 285px;
+    }
+
+    .modalBonus .modalBonus__title {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .modalBonus .modalBonus__btn {
+        font-size: 18px;
+        line-height: 18px;
+    }
+
+    .modalBonus .modalBonus__description {
+        font-size: 12px;
+        line-height: 15px;
+    }
+
+    .modalBonus .modalBonus__input input {
+        left: -87px;
+        width: 230px;
+        padding: 16px 0 16px 100px;
+        font-size: 14px;
+        line-height: 15px;
+    }
+
+    .modalBonus .modalBonus__select select {
+        font-size: 14px;
+        line-height: 15px;
+    }
+
+    .modalBonus .modalBonus__select::before {
+        right: -10px;
+    }
+
+    .modalBonus .modalBonus__select select {
+        padding: 0 10px 0 0;
+    }
+}
