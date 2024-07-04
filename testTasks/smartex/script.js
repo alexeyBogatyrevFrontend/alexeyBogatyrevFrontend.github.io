@@ -20,7 +20,7 @@ async function logArrayInfo(array) {
 	console.log('Done!')
 }
 
-// logArrayInfo([1, 2, 3])
+logArrayInfo([1, 2, 3])
 
 // CONSOLE
 //----------
@@ -56,8 +56,8 @@ function createCats() {
 
 let animals = createCats()
 
-// animals[0]()
-// animals[5]()
+animals[0]()
+animals[5]()
 
 // CONSOLE
 //----------
